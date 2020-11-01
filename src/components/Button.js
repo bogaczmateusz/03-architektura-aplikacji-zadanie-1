@@ -9,7 +9,7 @@ library.add(fas);
 function Button(props) {
     const { color, bgColor, icon, children } = props;
 
-    const colors = {
+    const palette = {
         turquoise: '#1abc9c',
         emerald: '#2ecc71',
         peterRiver: '#3498db',
@@ -35,8 +35,8 @@ function Button(props) {
     const styles = {
         border: 0,
         padding: '10px 20px',
-        color: colors[`${color}`],
-        backgroundColor: colors[`${bgColor}`]
+        color: palette[`${color}`],
+        backgroundColor: palette[`${bgColor}`]
     }
 
     return (
